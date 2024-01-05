@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Image } from '@chakra-ui/react';
+import { Box, Button, Flex, HStack, Heading, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend, Label } from 'recharts';
 import info from "../Assets/moreinfo.svg"
@@ -31,22 +31,33 @@ const PieCharts = () => {
 
   return (
     <Flex p="25px" flexDirection={{ base: 'column', md: 'row' }} justifyContent={"space-between"} textAlign={"center"} gap={"55px"}>
-      <Box w={"45%"} boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+      <Box w={"45%"} >
+      <Box boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
+          <Heading fontSize={"md"} p={"10px"}>  Top 3 Suppliers contributing to Category-1</Heading>
+          <HStack textAlign={"center"} justify={"center"}>
+            <Text color={"#AF19FF"}> Supplier-1 65%</Text>
+            <Text color={"#0088FE"}> Supplier-2 32%</Text>
+            <Text color={"#FF8042"}> Supplier-3 15%</Text>
+             </HStack>
+
+        </Box>
+        <Box boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)">
       <Box>
       <Heading fontSize="lg" p="25px"  textAlign="left">
         Emissions by Suppliers
       </Heading>
       <Box w={"55%"} >
         <PieChart width={410} height={350}>
-          <Pie data={data} dataKey="co2e" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={120} label>
+          <Pie data={data} dataKey="co2e"  nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={120} label>
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
             ))}
             <Label value="CO2e" position="center" />
           </Pie>
-          <Tooltip />
+          <Tooltip formatter={(value, name) => [value, name]} />
           <Legend />
         </PieChart>
+      </Box>
       </Box>
       </Box>
     </Box>

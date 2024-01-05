@@ -84,7 +84,7 @@ const BarCharts = () => {
         <Line type="monotone" dataKey="2022" stroke="#ff7300" />
         
       </ComposedChart>
-      <HStack>
+      <HStack justifyContent={"center"}>
       <Text ml={"20px"}>X-axis is Months</Text>
        <Text>Y-axis is Emmission</Text>
      

@@ -8,7 +8,7 @@ const FirstRow = () => {
 
 <Flex alignItems="center" justifyContent="center" flexWrap="wrap" mt="20px">
       {/** Purchased Goods and Services */}
-      <Box w={{ base: '100%', md: '300px' }} p="8px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)" mb={{ base: '4', md: '0' }}>
+      <Box w={{ base: '100%', md: '300px' }}  p="8px" boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)" mb={{ base: '4', md: '0' }}>
         <Flex align="center">
           <Heading size="md" color="#000000CC">
             Purchased Goods and Services

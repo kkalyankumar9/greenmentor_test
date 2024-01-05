@@ -16,6 +16,7 @@ justifyContent: "space-between",
 alignItems: "center",
 flexShrink: "0",
 
+
 }}>
         <Box style={{display: "flex",
 height: "64px",
@@ -56,6 +57,7 @@ gap: '10px'}}>
       ml="auto"
       border={"1px solid #02AB6C"}
       borderRadius={"6px"}
+    
     >
       <Text  display="inline">Show Time :</Text>
       <Select color='#02AB6C' border="none" w={"100px"}>
