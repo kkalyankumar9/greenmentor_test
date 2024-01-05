@@ -85,7 +85,7 @@ const BarCharts = () => {
         
       </ComposedChart>
       <HStack>
-      <Text ml={"20px"}>X-axis is co2e</Text>
+      <Text ml={"20px"}>X-axis is Months</Text>
        <Text>Y-axis is Emmission</Text>
      
       </HStack>

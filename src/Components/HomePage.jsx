@@ -10,14 +10,13 @@ const HomePage = () => {
   return (
     < >
     <Flex>
-    <Box>
-    <SideBar/>
- 
-    </Box>
-    <Box>
-    <Navbar/>
-    <FirstRow/>
-<BarCharts/>
+      <Box>
+      <SideBar/>
+      </Box>
+      <Box>
+      <Navbar/>
+      <FirstRow/>
+      <BarCharts/>
   
     </Box>
     </Flex>
